@@ -1,11 +1,11 @@
-package ReadFile;
+package readfile;
 
 import java.io.*;
 import java.net.URL;
 
-public class Buffreader {
+public class BuffReader {
     public static void main(String[] args) {
-        URL url = Buffreader.class.getResource("stock.txt");
+        URL url = BuffReader.class.getResource("stock.txt");
         File file = new File(url.getPath());
 
         String content = "";

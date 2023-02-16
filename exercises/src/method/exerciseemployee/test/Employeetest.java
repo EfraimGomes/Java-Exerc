@@ -6,11 +6,13 @@ public class Employeetest {
     public static void main(String[] args) {
 
         Employee employee = new Employee();
-        employee.name = "Bruno";
-        employee.age = 25;
-        employee.wages = new double[]{1200,988,5800};
+        employee.setName("Bruno");
+        employee.setAge(25);
+        employee.setWages(new double[]{1200.53,988.32,5800.32});
+
 
         employee.printEmployee();
+        employee.printAverageSalary();
     }
 
 }

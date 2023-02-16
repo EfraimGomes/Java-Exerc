@@ -1,15 +1,48 @@
 package method.manipulationmethod.domain;
 
-public class Teacher {
-    public String name;
-    public String schoolSubject;
-    public int age;
-    public char gender;
+public class Teacher extends Person {
+    private String name;
+    private String schoolSubject;
+    private int age;
+    private char gender;
 
-    public void printTeacher(){
-        System.out.println(this.name);
-        System.out.println(this.schoolSubject);
-        System.out.println(this.age);
-        System.out.println(this.gender);
+    @Override
+    public String toString() {
+        return "Teacher{" +
+                "name='" + name + '\'' +
+                ", schoolSubject='" + schoolSubject + '\'' +
+                ", age=" + age +
+                ", gender=" + gender +
+                '}';
+    }
+    public void setName(String name){
+        this.name = name;
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public void setSchoolSubject(String schoolSubject){
+        this.schoolSubject = schoolSubject;
+    }
+
+    public String getSchoolSubject(){
+        return this.schoolSubject;
+    }
+
+    public void setAge(int age){
+        this.age = age;
+    }
+
+    public int getAge(){
+        return this.age;
+    }
+
+    public void setGender(char gender){
+        this.gender = gender;
+    }
+    public char getGender(){
+        return this.gender;
     }
 }

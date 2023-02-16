@@ -1,6 +1,6 @@
 package method.manipulationmethod.test;
 import method.manipulationmethod.domain.Student;
-import method.manipulationmethod.domain.PrintStudent;
+
 
 public class StudentRegistration {
     public static void main(String[] args) {
@@ -10,28 +10,26 @@ public class StudentRegistration {
         Student stu2 = new Student();
         Student stu3 = new Student();
 
-        PrintStudent printStu = new PrintStudent();
+        stu.setName("Efraim");
+        stu.setAge(29);
+        stu.setGender('M');
 
-        stu.name = "Efraim";
-        stu.age = 29;
-        stu.gender = 'M';
+        stu1.setName("Pedro");
+        stu1.setAge(20);
+        stu1.setGender('M');
 
-        stu1.name = "Pedro";
-        stu1.age = 20;
-        stu1.gender = 'M';
+        stu2.setName("Henrique");
+        stu2.setAge(25);
+        stu2.setGender('M');
 
-        stu2.name = "Henrique";
-        stu2.age = 25;
-        stu2.gender = 'M';
+        stu3.setName("Marcus");
+        stu3.setAge(30);
+        stu3.setGender('M');
 
-        stu3.name = "Marcus";
-        stu3.age = 30;
-        stu3.gender = 'M';
-
-        printStu.print(stu);
-        printStu.print(stu1);
-        printStu.print(stu2);
-        printStu.print(stu3);
+        stu.print();
+        stu1.print();
+        stu2.print();
+        stu3.print();
 
 
     }
